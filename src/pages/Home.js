@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home({ history }) {
   const [products, setProducts] = useState([]);
@@ -17,7 +17,7 @@ export default function Home({ history }) {
   return (
     <>
       <article className="sans-serif">
-        <h2 className="f3 fw4 pa3 mv0">Albums</h2>
+        <h2 className="f3 fw4 pa3 mv0">Albuns</h2>
         <div className="cf pa2">
           {products.map((product) => {
             return (
